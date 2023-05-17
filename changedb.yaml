@@ -1,0 +1,25 @@
+---
+# Playbook cho tất cả các host
+- hosts: all
+  tasks:
+    - name: Change file master-data
+      copy:
+        src: /home/isofh/DHY/changeSlavetoMaster/auth-server/hihi
+        dest: /home/isofh/server/emr/dhy-production/master-data
+        owner: isofh
+        group: isofh
+        mode: "0644"
+    # - name: Change file auth-server
+    #   copy:
+    #     src: 
+    #     dest: /home/isofh/server/emr/dhy-production/auth-server
+    #     owner: isofh
+    #     group: isofh
+    #     mode: "0644"
+    # - name: Change file patient-service
+    #   copy:
+    #     src: 
+    #     dest: /home/isofh/server/emr/dhy-production/patient-service
+    #     owner: isofh
+    #     group: isofh
+    #     mode: "0644"
