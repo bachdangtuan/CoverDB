@@ -1,5 +1,6 @@
 ---
 # Playbook cho tất cả các host
+# CHUYỂN DB TỪ MASTER SANG SLAVES
 - hosts: all
   tasks:
     - name: Change file master-data
